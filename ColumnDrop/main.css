@@ -1,7 +1,7 @@
 /**
-https://developers.google.com/web/fundamentals/layouts/rwd-patterns/mostly-fluid
+https://developers.google.com/web/fundamentals/layouts/rwd-patterns/column-drop
 
-In the smallest view, each content div is stacked vertically. Once the screen width hits 600px, the primary content div remains at width: 100%, while the secondary div’s are shown as two columns below the primary div. Beyond 800px, the container div becomes fixed width and is centered on the screen.
+For full-width multi-column layouts, column drop simply stacks the columns vertically as the window width becomes too narrow for the content.
 **/
 
 

@@ -1,0 +1,43 @@
+/**
+https://developers.google.com/web/fundamentals/layouts/rwd-patterns/layout-shifter
+
+Key to this layout is the way content moves about, instead of reflowing and dropping below other columns. Due to the significant differences between each major breakpoint, it is more complex to maintain and likely involves changes within elements, not just overall content layout.
+**/
+
+
+.container{
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+
+.c1, .c2, .c3, .c4{
+	width: 100%;
+}
+
+@media (min-width: 600px){
+	.c2,.c3,.c4{
+		width: 50%;
+	}
+}
+
+@media (min-width: 800px){
+	.c1{
+		width: 60%;
+	}
+	.c2{
+		width: 40%;
+	}
+	.c3, .c4{
+		width: 33.33%;
+	}
+}
+
+@media (min-width: 800px){
+	.container{
+		width: 800px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
