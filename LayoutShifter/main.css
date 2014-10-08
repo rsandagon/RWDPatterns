@@ -17,20 +17,12 @@ Key to this layout is the way content moves about, instead of reflowing and drop
 }
 
 @media (min-width: 600px){
-	.c2,.c3,.c4{
-		width: 50%;
-	}
-}
-
-@media (min-width: 800px){
 	.c1{
-		width: 60%;
+		width: 25%;
 	}
-	.c2{
-		width: 40%;
-	}
-	.c3, .c4{
-		width: 33.33%;
+
+	.c4{
+		width: 75%;
 	}
 }
 
